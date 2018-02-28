@@ -1,0 +1,50 @@
+header#header
+  .branding
+    h1.site-title Meaningful Ipsum
+    h2.site-tagline First chapters from famous stories to use for your next design project
+
+  nav
+    button Choose a story
+    ul.story-list.hide
+      li
+        a.story-link(href="#", data-story="christmascarol") A Christmas Carol, by Charles Dickens
+      li
+        a.story-link(href="#", data-story="prideprejudice") Pride and Prejudice, by Jane Austen
+      li
+        a.story-link(href="#", data-story="frankenstein") Frankenstein, by Mary Shelley
+      li
+        a.story-link(href="#", data-story="heartofdarkness") Heart of Darkness, by Joseph Conrad
+      li
+        a.story-link(href="#", data-story="aliceinwonderland") Alice in Wonderland, by Lewis Carroll
+      
+      
+main
+  .app.christmascarol.hide(mv-app="christmascarol", mv-storage="https://github.com/brianhaferkamp", mv-plugins="markdown" mv-bar="no-login")
+    .story-container
+      .first-chapter(property="chapter")
+        h3.chapter-title(property="chaptertitle")
+        p.chapter-text.markdown(property="chaptertext")
+
+  .app.prideprejudice.hide(mv-app="prideandprejudice", mv-storage="https://github.com/brianhaferkamp", mv-plugins="markdown" mv-bar="no-login")
+    .story-container
+      .first-chapter(property="chapter")
+        h3.chapter-title(property="chaptertitle")
+        p.chapter-text.markdown(property="chaptertext")
+        
+  .app.frankenstein.hide(mv-app="frankenstein", mv-storage="https://github.com/brianhaferkamp", mv-plugins="markdown" mv-bar="no-login")
+    .story-container
+      .first-chapter.chapter(property="chapter")
+        h3.chapter-title(property="chaptertitle")
+        p.chapter-text.markdown(property="chaptertext")
+        
+  .app.heartofdarkness.hide(mv-app="heartofdarkness", mv-storage="https://github.com/brianhaferkamp", mv-plugins="markdown" mv-bar="no-login")
+    .story-container
+      .first-chapter.chapter(property="chapter")
+        h3.chapter-title(property="chaptertitle")
+        p.chapter-text.markdown(property="chaptertext")
+        
+  .app.aliceinwonderland.hide(mv-app="aliceinwonderland", mv-storage="https://github.com/brianhaferkamp", mv-plugins="markdown" mv-bar="no-login")
+    .story-container
+      .first-chapter.chapter(property="chapter")
+        h3.chapter-title(property="chaptertitle")
+        p.chapter-text.markdown(property="chaptertext")
